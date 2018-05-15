@@ -7,7 +7,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface PlaneRepository extends CrudRepository<Plane, String> {
+public interface PlaneRepository extends CrudRepository<Plane, Integer> {
 
-    List<Plane> findByName(String name);
+    //List<Plane> findByName(String name);
+    //List<Plane> findById(int id);
+    Plane findById(int id);
 }

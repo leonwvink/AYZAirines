@@ -23,7 +23,7 @@ public class AirportController {
     }
 
     @RequestMapping(value = "/all", method = RequestMethod.GET)
-    public Iterable<Airport> getAll(Airport airport) {
+    public Iterable<Airport> getAll() {
         return this.airportRepository.findAll();
     }
 
