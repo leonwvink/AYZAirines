@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface AirportRepository extends CrudRepository<Airport, String> {
+public interface AirportRepository extends CrudRepository<Airport, Integer> {
 
     List<Airport> findByName(String name);
 }

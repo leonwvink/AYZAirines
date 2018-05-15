@@ -1,7 +1,7 @@
 package com.capgemini.AYZAirlines.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+
 
 @Entity
 public class Plane {
@@ -12,9 +12,8 @@ public class Plane {
 
     private int tank;
 
-    @NotNull
-    @OneToMany
-    private String location;
+    @ManyToOne
+    private Airport airport;
 
 
 }
